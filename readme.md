@@ -1,0 +1,1 @@
+This project is to explore the basics of redux. It's part of a [tutorial I wrote](https://dev.to/aurelkurtula/introduction-to-redux-1g3) A demo can be seen [here](https://locksmith-menu-65550.netlify.com/)

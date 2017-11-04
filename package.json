@@ -1,6 +1,7 @@
 {
-  "name": "redux",
-  "version": "0.1.0",
+  "name": "introduction-to-redux",
+  "author": "Aurel Kurtula",
+  "version": "0.0.1",
   "dependencies": {
     "react-scripts": "1.0.14",
     "redux": "^3.7.2"
