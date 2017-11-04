@@ -1,0 +1,109 @@
+@media screen { * , *:after,*:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box;  box-sizing: border-box;	} }* {margin: auto; padding: auto;}
+html { font-size: 62.5%;  } /*base sizee*/
+$bg-color: #F7F7F7; 
+$dark-text: #363739; 
+$dark-bg: #444549;  
+$white-txt: #F6F7F7;  
+$light-txt: #7B7C80; 
+$cream-bg:  lighten(#D19A66, 13%);// #EFEDEE;
+
+body { font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif ;  font-size: 1.4rem; line-height: 2rem;  color:$dark-text; background: $bg-color; } /* =14px all type sizes are relative to the base size*/
+/*
+  <div class="box">
+  <img src="http://chenyiya.com/codepen/product-1.jpg"> 
+      <i class="fa fa-plus">
+      </i> <h2>Beer Bottle</h2> 
+      <p>$ 25</p>
+  </div>
+
+  <div id='wrap' >
+      <div id="cart"></div>
+      <div id="store"></div>
+    </div>
+*/
+
+#wrap{
+  display: flex;
+  flex-flow: row wrap;
+  width: 700px;
+}
+#store{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width:450px; 
+  order: 1;
+}
+#cart{
+  background-color: $dark-bg;
+  width: 250px;
+  height: 600px;
+  order:2;
+  color: white;
+  position: relative;
+  h2{
+    margin: 10px;
+  }
+  .total{
+    position: absolute;
+    font-weight: bolder;
+    background: $cream-bg;// #D19A66;
+    color: $light-txt;
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+}
+#cardItems div {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  margin: auto;
+  background: lighten($dark-text, 3%);
+  &:nth-child(odd){
+    background: $dark-text;
+  }
+ img{
+    width: 50px;
+    height: auto;
+    margin-left: 5px;
+  }
+  p{
+    width: 75%;
+  }
+  p span {
+    display: block;
+  }
+  .delete{
+    margin-right: 5px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.box{
+  background-color: $dark-bg;
+  color: $white-txt;
+  width: 130px; 
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+.meta{
+  position: absolute;
+  bottom: 0;
+  background: $cream-bg;
+  color: $light-txt;
+  padding: 3px;
+  width: 100%;
+}
+.box h2{
+  font-size: 1.6rem;
+}
+.box img{
+  width: 100%;
+}
