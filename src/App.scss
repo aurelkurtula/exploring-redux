@@ -107,3 +107,14 @@ body { font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-s
 .box img{
   width: 100%;
 }
+
+.info-banner{
+  background: lighten(gray, 25%) ;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.7rem;
+}

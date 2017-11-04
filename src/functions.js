@@ -41,11 +41,11 @@ let  { id, title, price, img,qty } = data;
   let item = document.createElement("div");
   let titleNode = document.createElement("p");
   item.setAttribute('data-id', id);
-    let titleTextNode = document.createTextNode(`${title}`);
+    let titleTextNode = document.createTextNode(`£{title}`);
         titleNode.appendChild(titleTextNode);
 
   let priceNode = document.createElement("span");
-    let priceTextNode = document.createTextNode(`$${(price*qty).toFixed(2)} (qty:${qty})`);
+    let priceTextNode = document.createTextNode(`£${(price*qty).toFixed(2)} (qty:${qty})`);
         priceNode.appendChild(priceTextNode);
 
   let deleteNode = document.createElement("span");

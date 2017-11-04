@@ -1,0 +1,150 @@
+@media screen {
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+* {
+  margin: auto;
+  padding: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*base sizee*/
+body {
+  font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #363739;
+  background: #F7F7F7;
+}
+
+/* =14px all type sizes are relative to the base size*/
+/*
+  <div class="box">
+  <img src="http://chenyiya.com/codepen/product-1.jpg"> 
+      <i class="fa fa-plus">
+      </i> <h2>Beer Bottle</h2> 
+      <p>$ 25</p>
+  </div>
+
+  <div id='wrap' >
+      <div id="cart"></div>
+      <div id="store"></div>
+    </div>
+*/
+#wrap {
+  display: flex;
+  flex-flow: row wrap;
+  width: 700px;
+}
+
+#store {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 450px;
+  order: 1;
+}
+
+#cart {
+  background-color: #444549;
+  width: 250px;
+  height: 600px;
+  order: 2;
+  color: white;
+  position: relative;
+}
+
+#cart h2 {
+  margin: 10px;
+}
+
+#cart .total {
+  position: absolute;
+  font-weight: bolder;
+  background: #e0bc99;
+  color: #7B7C80;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+#cardItems div {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  margin: auto;
+  background: #3d3f41;
+}
+
+#cardItems div:nth-child(odd) {
+  background: #363739;
+}
+
+#cardItems div img {
+  width: 50px;
+  height: auto;
+  margin-left: 5px;
+}
+
+#cardItems div p {
+  width: 75%;
+}
+
+#cardItems div p span {
+  display: block;
+}
+
+#cardItems div .delete {
+  margin-right: 5px;
+}
+
+#cardItems div .delete:hover {
+  cursor: pointer;
+}
+
+.box {
+  background-color: #444549;
+  color: #F6F7F7;
+  width: 130px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.meta {
+  position: absolute;
+  bottom: 0;
+  background: #e0bc99;
+  color: #7B7C80;
+  padding: 3px;
+  width: 100%;
+}
+
+.box h2 {
+  font-size: 1.6rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+.info-banner {
+  background: silver;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.7rem;
+}
